@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Save my work",
+      "type": "process",
+      "command": "bash",
+      "args": ["${workspaceFolder}/.devcontainer/save-work.sh"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "statusbar": {
+          "label": "$(cloud-upload) Save my work",
+          "detail": "Save all files and back up your work to GitHub"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "runOptions": { "instanceLimit": 1 }
+    }
+  ]
+}

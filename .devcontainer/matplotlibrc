@@ -1,0 +1,6 @@
+# Matplotlib plots open through the Codespaces Ports tab.
+backend: WebAgg
+webagg.address: 127.0.0.1
+webagg.port: 8988
+webagg.port_retries: 1
+webagg.open_in_browser: False

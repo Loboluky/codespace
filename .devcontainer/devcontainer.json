@@ -1,0 +1,24 @@
+{
+  "name": "MIT 6.100L Python",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "vscode",
+  "postCreateCommand": "uv sync --locked",
+  "waitFor": "postCreateCommand",
+  "forwardPorts": [8988],
+  "portsAttributes": {
+    "8988": {
+      "label": "Python plots",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "actboy168.tasks"
+      ]
+    }
+  }
+}
